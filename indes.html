@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/Style.css">
+    <script src="js/funcion_mostar_ocultar.js"></script>
+    <script src="js/main.js"></script>
+    <title>Python a JavaScript</title>
+
+</head>
+
+<body>
+    <h1>tercer taller de python a JavaScript</h1>
+    <div class="div_principal">
+        <div class="btn_ejercicios">
+            <section>
+                <button id="btn_01">Ejercicio 01</button>
+                <button id="btn_02">Ejercicio 02</button>
+                <button id="btn_03">Ejercicio 03</button>
+                <button id="btn_04">Ejercicio 04</button>
+                <button id="btn_05">Ejercicio 05</button>
+                <button id="btn_06">Ejercicio 06</button>
+                <button id="btn_07">Ejercicio 07</button>
+                <button id="btn_08">Ejercicio 08</button>
+                <button id="btn_09">Ejercicio 09</button>
+                <button id="btn_10">Ejercicio 10</button>
+                <button id="btn_11">Ejercicio 11</button>
+                <button id="btn_12">Ejercicio 12</button>
+            </section>
+        </div>
+        <div class="panel_ejercicios" id="panel_ejercicios">
+            <section>
+                <div id="ejercicio_01" class="ejercicios" style="display:block;">
+                    <h4>En una granja se requiere saber alguna información para determinar el precio de venta por cada
+                        kilo
+                        de huevo. precio se determina a traves del promedio de calidad de las N gallinas que hay en la
+                        granja. La calidad de cada gallina se obtiene según la formula:<br><br>
+                        calidad = (peso de la gallina * altura de la gallina)/Numero de huevos que pone;
+                    </h4>
+                    <form id="form_01">
+                        <input id="parametro" type="number" required placeholder="Ingrese el parametro de gallinas">
+                        <textarea id="text_resultado_ejer01" readonly
+                            placeholder="Aqui aparece el resultado"></textarea><br>
+                        <input class="submit_01" type="submit" value="Iniciar">
+                    </form>
+                    <dialog class="favDialog" id="favDialog" data-ciclo>
+                        <form id="dialog">
+                            <input type="number" name="peso" required placeholder="Ingrese el peso de la gallina">
+                            <input type="number" name="altura" required placeholder="Ingrese la altura de la gallina">
+                            <input type="number" name="huevos" required
+                                placeholder="Ingrese el numero de huevos que pone">
+                            <div>
+                                <input class="sub_confir" type="submit" value="Confirmar">
+                            </div>
+                        </form>
+                    </dialog>
+                </div>
+                <div id="ejercicio_02" class="ejercicios" style="display:none;">
+                    <h4>Hacer un algoritmo que al ingresar 2 números por la pantalla y se calcule la suma, resta,
+                        multiplicación
+                        y división. El proceso debe terminar cuando se hallan realizado 10 procesos (Hacer uso de
+                        contadores).</h4>
+                    <table class="tabla" id="tabla_operact">
+                        <thead>
+                            <tr>
+                                <th>COD</th>
+                                <th>SUMA</th>
+                                <th>RESTA</th>
+                                <th>MULTIPLICACION</td>
+                                <th>DIVISION</th>
+                            </tr>
+                        </thead>
+                        <tbody id="dataTable_oprac"></tbody>
+                    </table>
+                    <dialog class="favDialog" id="favDialog_ejer02">
+                        <form id="dialogo_02" data-opreract="10">
+                            <input type="text" name="num_1" required placeholder="Ingrese El nombre del estudiante">
+                            <input type="text" name="num_2" required placeholder="Ingrese los apellidos del estudiante">
+                            <div>
+                                <input class="sub_confir" type="submit" value="Confirmar">
+                            </div>
+                        </form>
+                    </dialog>
+                    <button class="btn_inicio" id="btn_incio_ejer02" value="Iniciar">Iniciar</button>
+                </div>
+                <div id="ejercicio_03" class="ejercicios" style="display:none;">
+                    <h4>Programa para solicitar el nombre, apellido, edad y la nota promedio de 5 estudiantes de un
+                        curso de computación.</h4>
+                    <table class="tabla" id="tabla_estud">
+                        <thead>
+                            <tr>
+                                <th>COD</th>
+                                <th>NOMBRE</th>
+                                <th>APELLIDOS</th>
+                                <th>EDAD</td>
+                                <th>NOTA PROMEDIO</th>
+                            </tr>
+                        </thead>
+                        <tbody id="dataTable"></tbody>
+                    </table>
+                    <dialog class="favDialog" id="favDialog_ejer03">
+                        <form id="dialogo_03" data-notas="2">
+                            <input type="text" name="nom_estu" required placeholder="Ingrese El nombre del estudiante">
+                            <input type="text" name="ape_estu" required
+                                placeholder="Ingrese los apellidos del estudiante">
+                            <input type="number" name="edad_estu" required placeholder="Ingrese la edad del estudiante">
+                            <input type="number" name="calif_estu" required
+                                placeholder="Ingrese la nota promedio del estudiante">
+                            <div>
+                                <input class="sub_confir" type="submit" value="Confirmar">
+                            </div>
+                        </form>
+                    </dialog>
+                    <button class="btn_inicio" id="btn_incio_ejer03" value="Iniciar">Iniciar</button>
+                </div>
+                <div id="ejercicio_04" class="ejercicios" style="display:none;">
+                    <h4>42 personas toman parte de un baile. Durante la fiesta una dama bailó con 7 caballeros, una
+                        segunda
+                        dama con 8, una tercera con 9, y así sucesivamente hasta que la última bailó con todos los
+                        hombres.
+                        Cuantas damas había en el baile?</h4>
+                    <textarea id="text_resultado_ejer04" readonly
+                        placeholder="Aqui aparece el resultado"></textarea><br>
+                    <button id="btn_incio_ejer04" value="Calcular">Calcular</button>
+                </div>
+                <div id="ejercicio_05" class="ejercicios" style="display:none;">
+                    <h4>El profesor de una materia desea conocer la cantidad de sus alumnos que no tienen derecho al
+                        examen
+                        de nivelación. Diseñe un pseudocódigo que lea las calificaciones obtenidas en las 5 unidades por
+                        cada
+                        uno de los 40 alumnos y escriba la cantidad de ellos que no tienen derecho al examen de
+                        nivelación.</h4>
+                    <table class="tabla" id="tabla_examen">
+                        <thead>
+                            <tr>
+                                <th colspan="5" class="th">ESTUDIANTES QUE NO TIENEN DERECHO AL EXAMEN</th>
+                            </tr>
+                            <tr>
+                                <th>COD</th>
+                                <th>NOMBRE</th>
+                                <th>APELLIDOS</th>
+                                <th>NOTA FINAL</th>
+                            </tr>
+                        </thead>
+                        <tbody id="dataTable_examen"></tbody>
+                    </table>
+                    <dialog class="favDialog" id="favDialog_ejer05">
+                        <form id="dialogo_05" data-examen="40">
+                            <input type="text" name="nom_estu" required placeholder="Ingrese El nombre del estudiante">
+                            <input type="text" name="ape_estu" required
+                                placeholder="Ingrese los apellidos del estudiante">
+                            <input type="number" name="nota1" required placeholder="Ingrese la nota N°1 del estudiante">
+                            <input type="number" name="nota2" required placeholder="Ingrese la nota N°2 del estudiante">
+                            <input type="number" name="nota3" required placeholder="Ingrese la nota N°3 del estudiante">
+                            <input type="number" name="nota4" required placeholder="Ingrese la nota N°4 del estudiante">
+                            <input type="number" name="nota5" required placeholder="Ingrese la nota N°5 del estudiante">
+                            <div>
+                                <input class="sub_confir" type="submit" value="Confirmar">
+                            </div>
+                        </form>
+                    </dialog>
+                    <button class="btn_inicio" id="btn_incio_ejer05" value="Iniciar">Iniciar</button>
+                </div>
+                <div id="ejercicio_06" class="ejercicios" style="display:none;">
+                    <h4>Un avión que viaja 800 Km/hr. Dispara un proyectil auto impulsado, en el momento del disparo, el
+                        avión hace un giro de 90 grados y acelera a 20 mtrs/seg2. El proyectil sigue su curso,
+                        acelerando a 10
+                        mtrs./seg2. Diseñe un pseudocódigo que escriba cada segundo, la distancia que separa al avión
+                        del
+                        proyectil, hasta que estén a 10,000 mtrs. o más.
+                    </h4>
+                    <table class="tabla" id="tabla_examen">
+                        <thead>
+                            <tr>
+                                <th colspan="5" class="th">VELOCIDAD DE UN AVION Y PROYECTIL</th>
+                            </tr>
+                            <tr>
+                                <th>SEG</th>
+                                <th>DISTANCIA AVION</th>
+                                <th>DISTANCIA PROYECTIL</th>
+                            </tr>
+                        </thead>
+                        <tbody id="dataTable_distancia"></tbody>
+                    </table>
+                    <button class="btn_inicio" id="btn_incio_ejer06" value="Calcular">Calcular</button>
+                    <button class="btn_inicio" id="btn_limpiar_ejer06" value="Limpiar">Limpiar</button>
+                </div>
+                <div id="ejercicio_07" class="ejercicios" style="display:none;">
+                    <h4>Una compañía de seguros tiene contratados a n vendedores. Cada uno hace tres ventas a la semana.
+                        Su política de pagos es que un vendedor recibe un sueldo base, y un 10% extra por comisiones de
+                        sus ventas. El gerente de su compañía desea saber cuanto dinero obtendrá en la semana cada
+                        vendedor por concepto de comisiones por las tres ventas realizadas, y cuanto tomando en cuenta
+                        su
+                        sueldo base y sus comisiones</h4>
+                    <table class="tabla" id="tabla_empleado">
+                        <thead>
+                            <tr>
+                                <th>COD</th>
+                                <th>NOMBRE</th>
+                                <th>SUELDO BASE</th>
+                                <th>COMICION VENTA N°1</th>
+                                <th>COMICION VENTA N°2</th>
+                                <th>COMICION VENTA N°3</th>
+                                <th>SUELDO TOTAL</th>
+                            </tr>
+                        </thead>
+                        <tbody id="dataTable_empleado"></tbody>
+                    </table>
+                    <dialog class="favDialog" id="favDialog_ejer07">
+                        <form id="dialogo_07" data-empleado="10">
+                            <input type="text" name="nom_vend" required placeholder="Ingrese El nombre del Empleado">
+                            <input type="number" name="sueldo_base" required placeholder="Ingrese el sueldo base">
+                            <input type="number" name="venta1" required placeholder="Ingrese valor de la venta N°1">
+                            <input type="number" name="venta2" required placeholder="Ingrese valor de la venta N°2">
+                            <input type="number" name="venta3" required placeholder="Ingrese valor de la venta N°3">
+                            <div>
+                                <input class="sub_confir" type="submit" value="Confirmar">
+                            </div>
+                        </form>
+                    </dialog>
+                    <button class="btn_inicio" id="btn_incio_ejer07" value="Iniciar">Iniciar</button>
+                </div>
+                <div id="ejercicio_08" style="display:none;">
+                    <h4>Diseñar un pseudocódigo que calcule el promedio ponderado para alumno del ITT. El cálculo se
+                        hace
+                        de la siguiente forma:
+                        Se multiplica cada calificación por los créditos de cada materia
+                        El resultado anterior se suma con los resultados de todas las materias, por separado se suman
+                        los
+                        créditos de cada materia y finalmente se divide la suma de todas las materias por sus
+                        respectivos
+                        créditos, entre la suma de todos los créditos. (materias: Fundamentos, BD y ética).
+                    </h4>
+                    <form id="form_08">
+                        <input id="cred_fund" step="any" type="number" required placeholder="INGRSE LOS CREDITOS DE FUNDAMENTOS">
+                        <input id="cred_bd" step="any" type="number" required placeholder="INGRSE LOS CREDITOS DE BASE DE DATOS">
+                        <input id="cred_etc" step="any" type="number" required placeholder="INGRSE LOS CREDITOS DE ETICA">
+                        <table class="tabla" id="tabla_empleado">
+                            <thead>
+                                <tr>
+                                    <th>COD</th>
+                                    <th>NOMBRE</th>
+                                    <th>PROMEDIO ITT</th>
+                                </tr>
+                            </thead>
+                            <tbody id="dataTable_prueva"></tbody>
+                        </table>
+                        <input class="submit_01" type="submit" value="Iniciar">
+                    </form>
+                    <dialog class="favDialog" id="favDialog_ejer08">
+                        <form id="dialogo_08" data-notas="10">
+                            <input type="text" name="nom_estud" required placeholder="INGRESE EL NOMBRE DEL ESTUDIANTE">
+                            <input step="any" type="number" name="not_funt" required placeholder="INGRESE LA NOTA DE FUNDAMENTOS">
+                            <input step="any" type="number" name="not_base" required placeholder="INGRESE LA NOTA DE BASE DE DATOS">
+                            <input step="any" type="number" name="not_etc" required placeholder="INGRESE LA NOTA DE ETICA ">
+                            <div>
+                                <input class="sub_confir" type="submit" value="Confirmar">
+                            </div>
+                        </form>
+                    </dialog>
+                </div>
+                <div id="ejercicio_09" style="display:none;">
+                    <h4>Realizar el algoritmo que lea N números, calcule y escriba la suma de los pares y el producto de
+                        los impares</h4>
+                    <form id="form_09">
+                        <input id="parametro_09" type="number" required placeholder="Ingrese el parametro de numeros">
+                        <textarea id="text_resultado_ejer09" readonly placeholder="Aqui aparece el resultado"></textarea><br>
+                        <input class="submit_01" type="submit" value="Iniciar">
+                    </form>
+                    <dialog class="favDialog" id="favDialog_09" data-votos>
+                        <form id="dialog_09">
+                            <h5 style="color: #fff;">1 = A, 2 = B, 3 = C</h5>
+                            <input type="number" name="num_ejer9" required placeholder="Ingrese su voto">
+                            <div>
+                                <input class="sub_confir" type="submit" value="Confirmar">
+                            </div>
+                        </form>
+                    </dialog>
+                </div>
+                <!--<div id="ejercicio_10" style="display:none;">
+                    <form id="form_10">
+                        <h4>Calcular el valor total del valor de 5 productos, el IVA y el subtotal y el total</h4>
+                        <input id="prodct_01" type="number" required placeholder="Ingrese el valor del producto N°1">
+                        <input id="prodct_02" type="number" required placeholder="Ingrese el valor del producto N°2">
+                        <input id="prodct_03" type="number" required placeholder="Ingrese el valor del producto N°3">
+                        <input id="prodct_04" type="number" required placeholder="Ingrese el valor del producto N°">
+                        <input id="prodct_05" type="number" required placeholder="Ingrese el valor del producto N°5">
+                        <textarea id="text_resultado_ejer10" readonly
+                            placeholder="Aqui aparece el resultado"></textarea>
+                        <input class="submit_01" type="submit" value="Calcular">
+                    </form>
+                </div>
+                <div id="ejercicio_11" style="display:none;">
+                    <h4>Programa para solicitar el nombre, apellido, edad y la nota promedio de 5 estudiantes de un
+                        curso de computación.</h4>
+                    <table class="tabla" id="tabla_estud">
+                        <thead>
+                            <tr>
+                                <th>COD</th>
+                                <th>NOMBRE</th>
+                                <th>APELLIDOS</th>
+                                <th>EDAD</td>
+                                <th>NOTA PROMEDIO</th>
+                            </tr>
+                        </thead>
+                        <tbody id="dataTable"></tbody>
+                    </table>
+                    <dialog class="favDialog" id="favDialog_ejer11">
+                        <form id="dialogo" data-notas="2">
+                            <input type="text" name="nom_estu" required placeholder="Ingrese El nombre del estudiante">
+                            <input type="text" name="ape_estu" required
+                                placeholder="Ingrese los apellidos del estudiante">
+                            <input type="number" name="edad_estu" required placeholder="Ingrese la edad del estudiante">
+                            <input type="number" name="calif_estu" required
+                                placeholder="Ingrese la nota promedio del estudiante">
+                            <div>
+                                <input class="sub_confir" type="submit" value="Confirmar">
+                            </div>
+                        </form>
+                    </dialog>
+                    <button id="btn_incio_ejer11" value="Iniciar">Iniciar</button>
+                </div>
+                <div id="ejercicio_12" style="display:none;">
+                    <form id="form_12">
+                        <h4>Restarle al primer número al segundo (siempre y cuando el primero sea mayor que él segundo
+                        </h4>
+                        <input id="primer_num" type="number" required placeholder="Ingrese el primer numero">
+                        <input id="segundo_num" type="number" required placeholder="Ingrese el segundo numero">
+                        <textarea id="text_resultado_ejer12" readonly
+                            placeholder="Aqui aparece el resultado"></textarea>
+                        <input class="submit_01" type="submit" value="Calcular">
+                    </form>
+                </div>-->
+            </section>
+        </div>
+    </div>
+</body>
+
+</html>
