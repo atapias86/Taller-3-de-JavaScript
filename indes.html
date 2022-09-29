@@ -77,8 +77,8 @@
                     </table>
                     <dialog class="favDialog" id="favDialog_ejer02">
                         <form id="dialogo_02" data-opreract="10">
-                            <input type="text" name="num_1" required placeholder="Ingrese El nombre del estudiante">
-                            <input type="text" name="num_2" required placeholder="Ingrese los apellidos del estudiante">
+                            <input type="number" name="num_1" required placeholder="Ingrese El nombre del estudiante">
+                            <input type="number" name="num_2" required placeholder="Ingrese los apellidos del estudiante">
                             <div>
                                 <input class="sub_confir" type="submit" value="Confirmar">
                             </div>
@@ -223,7 +223,7 @@
                     </dialog>
                     <button class="btn_inicio" id="btn_incio_ejer07" value="Iniciar">Iniciar</button>
                 </div>
-                <div id="ejercicio_08" style="display:none;">
+                <div id="ejercicio_08" class="ejercicios" style="display:none;">
                     <h4>Diseñar un pseudocódigo que calcule el promedio ponderado para alumno del ITT. El cálculo se
                         hace
                         de la siguiente forma:
@@ -235,9 +235,12 @@
                         créditos, entre la suma de todos los créditos. (materias: Fundamentos, BD y ética).
                     </h4>
                     <form id="form_08">
-                        <input id="cred_fund" step="any" type="number" required placeholder="INGRSE LOS CREDITOS DE FUNDAMENTOS">
-                        <input id="cred_bd" step="any" type="number" required placeholder="INGRSE LOS CREDITOS DE BASE DE DATOS">
-                        <input id="cred_etc" step="any" type="number" required placeholder="INGRSE LOS CREDITOS DE ETICA">
+                        <input id="cred_fund" step="any" type="number" required
+                            placeholder="INGRSE LOS CREDITOS DE FUNDAMENTOS">
+                        <input id="cred_bd" step="any" type="number" required
+                            placeholder="INGRSE LOS CREDITOS DE BASE DE DATOS">
+                        <input id="cred_etc" step="any" type="number" required
+                            placeholder="INGRSE LOS CREDITOS DE ETICA">
                         <table class="tabla" id="tabla_empleado">
                             <thead>
                                 <tr>
@@ -253,21 +256,25 @@
                     <dialog class="favDialog" id="favDialog_ejer08">
                         <form id="dialogo_08" data-notas="10">
                             <input type="text" name="nom_estud" required placeholder="INGRESE EL NOMBRE DEL ESTUDIANTE">
-                            <input step="any" type="number" name="not_funt" required placeholder="INGRESE LA NOTA DE FUNDAMENTOS">
-                            <input step="any" type="number" name="not_base" required placeholder="INGRESE LA NOTA DE BASE DE DATOS">
-                            <input step="any" type="number" name="not_etc" required placeholder="INGRESE LA NOTA DE ETICA ">
+                            <input step="any" type="number" name="not_funt" required
+                                placeholder="INGRESE LA NOTA DE FUNDAMENTOS">
+                            <input step="any" type="number" name="not_base" required
+                                placeholder="INGRESE LA NOTA DE BASE DE DATOS">
+                            <input step="any" type="number" name="not_etc" required
+                                placeholder="INGRESE LA NOTA DE ETICA ">
                             <div>
                                 <input class="sub_confir" type="submit" value="Confirmar">
                             </div>
                         </form>
                     </dialog>
                 </div>
-                <div id="ejercicio_09" style="display:none;">
-                    <h4>Realizar el algoritmo que lea N números, calcule y escriba la suma de los pares y el producto de
-                        los impares</h4>
+
+                <div id="ejercicio_09" class="ejercicios" style="display:none;">
+                    <h4>Diseñe un algoritmo que determine el resultado de la elección del representante estudiantil de la universidad X, para ello se presentaron tres candidatos A, B, y C. Para ganar la elección se debe obtener como mínimo el 51%. En caso que no haya un ganador se repite la elección en una segunda vuelta. Van a la segunda vuelta los dos candidatos que obtengan la más alta votación. Se anula la elección en caso de producirse un empate doble por el segundo lugar o un empate triple.</h4>
                     <form id="form_09">
-                        <input id="parametro_09" type="number" required placeholder="Ingrese el parametro de numeros">
-                        <textarea id="text_resultado_ejer09" readonly placeholder="Aqui aparece el resultado"></textarea><br>
+                        <input id="parametros_09" type="number" required placeholder="Ingrese el parametro de votos">
+                        <textarea id="text_resultado_ejer09" readonly
+                            placeholder="Aqui aparece el resultado"></textarea><br>
                         <input class="submit_01" type="submit" value="Iniciar">
                     </form>
                     <dialog class="favDialog" id="favDialog_09" data-votos>
@@ -280,60 +287,85 @@
                         </form>
                     </dialog>
                 </div>
-                <!--<div id="ejercicio_10" style="display:none;">
-                    <form id="form_10">
-                        <h4>Calcular el valor total del valor de 5 productos, el IVA y el subtotal y el total</h4>
-                        <input id="prodct_01" type="number" required placeholder="Ingrese el valor del producto N°1">
-                        <input id="prodct_02" type="number" required placeholder="Ingrese el valor del producto N°2">
-                        <input id="prodct_03" type="number" required placeholder="Ingrese el valor del producto N°3">
-                        <input id="prodct_04" type="number" required placeholder="Ingrese el valor del producto N°">
-                        <input id="prodct_05" type="number" required placeholder="Ingrese el valor del producto N°5">
-                        <textarea id="text_resultado_ejer10" readonly
-                            placeholder="Aqui aparece el resultado"></textarea>
-                        <input class="submit_01" type="submit" value="Calcular">
-                    </form>
-                </div>
-                <div id="ejercicio_11" style="display:none;">
-                    <h4>Programa para solicitar el nombre, apellido, edad y la nota promedio de 5 estudiantes de un
-                        curso de computación.</h4>
-                    <table class="tabla" id="tabla_estud">
+                <div id="ejercicio_10" class="ejercicios" style="display:none;">
+                    <h4>Se está realizando un estudio del tráfico en una de las calles de su ciudad. Para ello deberá
+                        controlar durante un cierto tiempo los vehículos que pasan por dicha calle. Los distintos tipos
+                        de vehículo será: Turismo, Autobús, Camión o Motocicleta. Además, si el tipo de vehículo es
+                        Turismo debe anotar el número de ocupantes. El programa deberá contar 200 vehículos, e ir
+                        guardando cuantos pasan de cada tipo. Finalmente mostrará el porcentaje de cada uno de los
+                        tipos.</h4>
+                    <table class="tabla" id="tabla_transito">
                         <thead>
                             <tr>
                                 <th>COD</th>
-                                <th>NOMBRE</th>
-                                <th>APELLIDOS</th>
-                                <th>EDAD</td>
-                                <th>NOTA PROMEDIO</th>
+                                <th>VEHICULO</th>
+                                <th>PORCENTAJE DE TRAFICO</th>
                             </tr>
                         </thead>
-                        <tbody id="dataTable"></tbody>
+                        <tbody id="dataTable_transito"></tbody>
                     </table>
-                    <dialog class="favDialog" id="favDialog_ejer11">
-                        <form id="dialogo" data-notas="2">
-                            <input type="text" name="nom_estu" required placeholder="Ingrese El nombre del estudiante">
-                            <input type="text" name="ape_estu" required
-                                placeholder="Ingrese los apellidos del estudiante">
-                            <input type="number" name="edad_estu" required placeholder="Ingrese la edad del estudiante">
-                            <input type="number" name="calif_estu" required
-                                placeholder="Ingrese la nota promedio del estudiante">
+                    <dialog class="favDialog" id="favDialog_ejer10">
+                        <form id="dialogo_10" data-transito="200">
+                            <select id="vehiculo" id="">
+                                <option value="Selecionar">Selecionar</option>
+                                <option value="Turismo">Turismo</option>
+                                <option value="Autobús">Autobús</option>
+                                <option value="Camión">Camión</option>
+                                <option value="Motocicleta">Motocicleta</option>
+                            </select>
                             <div>
                                 <input class="sub_confir" type="submit" value="Confirmar">
                             </div>
                         </form>
                     </dialog>
-                    <button id="btn_incio_ejer11" value="Iniciar">Iniciar</button>
+                    <button class="btn_inicio" id="btn_incio_ejer10" value="Iniciar">Iniciar</button>
                 </div>
-                <div id="ejercicio_12" style="display:none;">
-                    <form id="form_12">
-                        <h4>Restarle al primer número al segundo (siempre y cuando el primero sea mayor que él segundo
-                        </h4>
-                        <input id="primer_num" type="number" required placeholder="Ingrese el primer numero">
-                        <input id="segundo_num" type="number" required placeholder="Ingrese el segundo numero">
-                        <textarea id="text_resultado_ejer12" readonly
-                            placeholder="Aqui aparece el resultado"></textarea>
-                        <input class="submit_01" type="submit" value="Calcular">
+                <div id="ejercicio_11" class="ejercicios" style="display:none;">
+                    <h4>El Depto. de Seguridad Pública y Transito de desea saber de los n autos que entran a la ciudad de Bogotá, cuantos entran con calcomanía de cada color. Conociendo el último dígito de la placa de cada automóvil se puede determinar el color de la calcomanía utilizando la sig. Relación:<br><br> DÍGITO COLOR <br>1 o 2 amarilla<br> 3 o 4 rosa<br> 5 o 6 roja<br>7 o 8 verde<br> 9 o 0 azul</h4>
+                    <form id="form_11">
+                        <input id="parametro_placas" type="number" required placeholder="Ingrese el parametro de vehiculos">
+                        <table class="tabla" id="tabla_calco">
+                            <thead>
+                                <tr>
+                                    <th>COD</th>
+                                    <th>COLOR CALCOMANIA</th>
+                                    <th>PLACA</th>
+                                    <th>TOTAL VEHICULOS</td>
+                                </tr>
+                            </thead>
+                            <tbody id="dataTable_calco"></tbody>
+                        </table>
+                        <input class="submit_01" type="submit" value="Iniciar">
                     </form>
-                </div>-->
+
+                    <dialog class="favDialog" id="favDialog_11">
+                        <form id="dialogo_11" data-placas>
+                            <input type="number" name="num_placa" required
+                                placeholder="Ingrese el ultimo diguito de la placa">
+                            <div>
+                                <input class="sub_confir" type="submit" value="Confirmar">
+                            </div>
+                        </form>
+                    </dialog>
+                </div>
+                <div id="ejercicio_12" class="ejercicios" style="display:none;">
+                    <h4>Diseñe un algoritmo que determine el resultado de la elección del representante estudiantil de la universidad X, para ello se presentaron tres candidatos A, B, y C. Para ganar la elección se debe obtener como mínimo el 51%. En caso que no haya un ganador se repite la elección en una segunda vuelta. Van a la segunda vuelta los dos candidatos que obtengan la más alta votación. Se anula la elección en caso de producirse un empate doble por el segundo lugar o un empate triple.</h4>
+                    <form id="form_12">
+                        <input id="parametros_12" type="number" required placeholder="Ingrese el parametro de votos">
+                        <textarea id="text_resultado_ejer12" readonly
+                            placeholder="Aqui aparece el resultado"></textarea><br>
+                        <input class="submit_01" type="submit" value="Iniciar">
+                    </form>
+                    <dialog class="favDialog" id="favDialog_12" data-votos2>
+                        <form id="dialog_12">
+                            <h5 style="color: #fff;">1 = A, 2 = B, 3 = C</h5>
+                            <input type="number" name="num_ejer12" required placeholder="Ingrese su voto">
+                            <div>
+                                <input class="sub_confir" type="submit" value="Confirmar">
+                            </div>
+                        </form>
+                    </dialog>
+                </div>
             </section>
         </div>
     </div>
